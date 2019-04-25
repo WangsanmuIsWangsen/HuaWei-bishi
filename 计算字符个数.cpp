@@ -6,12 +6,13 @@
 using namespace std;
 int main(void)
 {
-	int num = 0;  //¼ÇÂ¼ÊıÁ¿
+	int num = 0;  //è®°å½•æ•°é‡
 	string str;
 	getline(cin, str);
 	char C;
+	//getchar();  //å¦‚æœåœ¨æœ¬åœ°IDE
 	cin >> C;
-	for (int i = 0; i < str.size(); i++)  //È«²¿×ª»»ÎªĞ¡Ğ´
+	for (int i = 0; i < str.size(); i++)  //å…¨éƒ¨è½¬æ¢ä¸ºå°å†™
 	{
 		if (str[i] >= 'A'&&str[i] <= 'Z')
 			str[i] = str[i] - 'A' + 'a';
@@ -24,4 +25,4 @@ int main(void)
 	cout << num;
 	return 0;
 }
-//ÓÉÓÚÅ£¿ÍÍø²âÊÔµÄÎÊÌâ£¬Èç¹ûÔÚ±¾µØIDEÅÜĞèÒªÉÔÎ¢ĞŞ¸ÄÏÂ´úÂë£¬ÔÚcin>>CÇ°Ãæ+getchar()
+//ç”±äºç‰›å®¢ç½‘æµ‹è¯•çš„é—®é¢˜ï¼Œå¦‚æœåœ¨æœ¬åœ°IDEè·‘éœ€è¦ç¨å¾®ä¿®æ”¹ä¸‹ä»£ç ï¼Œåœ¨cin>>Cå‰é¢+getchar()
